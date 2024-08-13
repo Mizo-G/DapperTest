@@ -26,7 +26,7 @@ internal class Program
     {
         var watch = new Stopwatch();
         var tests = new List<Test>();
-        var sql = "select top(1000000) * from Test";
+        var sql = "select * from Test";
 
         using var conn = new SqlConnection(connectionString);
         conn.Open();
@@ -55,7 +55,7 @@ internal class Program
     {
         var watch = new Stopwatch();
         var tests = new List<Test>();
-        var sql = "select top(1000000) * from Test";
+        var sql = "select * from Test";
         using var conn = new SqlConnection(connectionString);
         conn.Open();
         watch.Restart();
